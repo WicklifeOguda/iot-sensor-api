@@ -1,2 +1,10 @@
+# Loading base requirements
+-r ./requirements.txt
+
+# code sorting and formating
 isort
 black
+
+# testing
+pytest
+httpx
