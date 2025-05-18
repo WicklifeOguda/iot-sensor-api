@@ -14,12 +14,16 @@ class IncomingSensorData(BaseModel):
     timestamp: datetime
 
 
-class OutgoingSensorData(IncomingSensorData):
+class OutgoingSensorData(BaseModel):
     """
     Validation schema for sensor data sent by the API
     """
 
     id: int
+    device_id: str
+    temperature: float
+    humidity: float
+    timestamp: datetime
 
     class ConfigDict:
         orm_mode = True
