@@ -82,7 +82,7 @@ curl http://localhost:8000/readings/sensor-001?limit=7
 
 ## Running unit tests locally
 
-From the root directory, run:
+From the project root directory, run:
 
 ```bash
 pytest
