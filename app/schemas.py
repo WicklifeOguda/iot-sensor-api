@@ -21,5 +21,5 @@ class OutgoingSensorData(IncomingSensorData):
 
     id: int
 
-    class Config:
+    class ConfigDict:
         orm_mode = True
